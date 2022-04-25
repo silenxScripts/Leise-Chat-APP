@@ -1,0 +1,186 @@
+@media only screen and (max-width: 999px) {
+  .container {
+    display: flex;
+
+    .Sidebar {
+      display: none;
+    }
+
+    .Chat {
+      flex: 1;
+      height: 100vh;
+      background-color: var(--Turtiary);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Contact {
+      height: 50px;
+      background-color: var(--Primary);
+      display: flex;
+      align-items: center;
+      padding: 0px 10px;
+      justify-content: space-between;
+      h1 {
+        color: white;
+        font-family: var(--Font-Ubuntu-C);
+        font-size: 1rem;
+      }
+    }
+
+    .ChatBox {
+      flex: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 10px 5px;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      .ChatBubble {
+        max-width: 13rem;
+        min-width: 50px;
+        font-family: var(--Font-Ubuntu-C);
+        color: var(--Font-Color);
+        padding: 10px;
+        background-color: var(--Chat-S);
+        border-radius: 10px;
+        height: fit-content;
+        margin: 10px 0px;
+      }
+    }
+
+    .Input {
+      display: flex;
+
+      input {
+        font-size: 20px;
+        padding: 5px;
+        color: var(--Font-Color);
+        font-size: var(--Font-Ubuntu);
+        background-color: transparent;
+        border: 0px;
+        border: 1px solid var(--Font-Color);
+        border-radius: 5px;
+        flex: 1;
+
+        &:focus,
+        &:active {
+          outline: none;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        border: 0px;
+        background-color: var(--Font-Color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 999px) {
+  .container {
+    display: flex;
+    overflow: hidden;
+
+    .Sidebar {
+        position: relative;
+        height: 100vh;
+        flex: 1;
+    }
+
+    .Chat {
+      flex: 3;
+      height: 100vh;
+      background-color: var(--Turtiary);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Contact {
+      height: 50px;
+      background-color: var(--Primary);
+      display: flex;
+      align-items: center;
+      padding: 0px 10px;
+      justify-content: space-between;
+      h1 {
+        color: white;
+        font-family: var(--Font-Ubuntu-C);
+        font-size: 1rem;
+      }
+    }
+
+    .ChatBox {
+      flex: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 10px 5px;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      .ChatBubble {
+        max-width: 25rem;
+        min-width: 50px;
+        font-family: var(--Font-Ubuntu-C);
+        color: var(--Font-Color);
+        padding: 10px;
+        background-color: var(--Chat-S);
+        border-radius: 10px;
+        height: fit-content;
+        margin: 10px 0px;
+      }
+    }
+
+    .Input {
+      display: flex;
+
+      input {
+        font-size: 20px;
+        padding: 5px;
+        color: var(--Font-Color);
+        font-size: var(--Font-Ubuntu);
+        background-color: transparent;
+        border: 0px;
+        border: 1px solid var(--Font-Color);
+        border-radius: 5px;
+        flex: 1;
+
+        &:focus,
+        &:active {
+          outline: none;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        border: 0px;
+        background-color: var(--Font-Color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

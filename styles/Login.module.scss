@@ -1,0 +1,147 @@
+@media only screen and (max-width:999px) {
+    .container{
+        position: absolute;
+        top: 0;left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--Primary);
+        background: url('/img/backgrounds/Login_Page.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .LoginForm{
+        background: var(--Secondary);
+        border: 1px solid var(--Sus);
+        height: 400px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px 0px rgba(85,0,255,1);
+        width: 90%;
+        color: white;
+        font-family: var(--Font-Ubuntu);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+        h1{
+            font-size: 16px;
+            font-weight: 300;
+            width: 80%;
+            max-width: 20rem;
+            background-color: var(--Primary);
+            padding: 5px 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input{
+            border: 0px;
+            color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: transparent;
+            border-bottom: 2px solid var(--Sus);
+            transition: 0.3s;
+    
+            &:focus,&:active{
+                outline: none;
+                border-color: red;
+            }   
+        }
+    
+        button{
+    
+        }
+    }
+    
+    .Logo{
+        font-family: var(--Font-Ubuntu);
+        padding: 10px 5px;
+        margin: 1rem;
+        color: white;
+        align-items: center;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+        
+}
+@media only screen and (min-width:999px) {
+    .container{
+        position: absolute;
+        top: 0;left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--Primary);
+        background: url('/img/backgrounds/Login_Page.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .LoginForm{
+        background: var(--Secondary);
+        border: 1px solid var(--Sus);
+        height: 400px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px 0px rgba(85,0,255,1);
+        width: 90%;
+        color: white;
+        font-family: var(--Font-Ubuntu);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+        h1{
+            font-size: 20px;
+            font-weight: 300;
+            width: 80%;
+            max-width: 20rem;
+            background-color: var(--Primary);
+            padding: 5px 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input{
+            border: 0px;
+            color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: transparent;
+            border-bottom: 2px solid var(--Sus);
+            width: 50%;
+            transition: 0.3s;
+    
+            &:focus,&:active{
+                outline: none;
+                border-color: red;
+            }   
+        }
+    
+        button{
+    
+        }
+    }
+    
+    .Logo{
+        font-family: var(--Font-Ubuntu);
+        padding: 10px 5px;
+        margin: 1rem;
+        color: white;
+        align-items: center;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+        
+}

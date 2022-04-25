@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Open+Sans&family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&display=swap");
+
+:root{
+  --Primary:#202225;
+  --Secondary:#36393f;
+  --Turtiary:#292b2f;
+  --Font-Color:#e7e7e7;
+  --Sus:#5900ff;
+
+  --Chat-R:#00122e;
+  --Chat-S:#006e00;
+
+  --Font-Sans: "Moon Dance", cursive;
+  --Font-Sans: "Open Sans", sans-serif;
+  --Font-Ubuntu: "Ubuntu", sans-serif;
+  --Font-Ubuntu-C: "Ubuntu Condensed", sans-serif;
+  --Font-Ubuntu-Mono: "Ubuntu Mono", monospace;
+}
+
+.body{
+  background-color: var(--Primary);
+}
+
+.container{
+  position: absolute;
+  top: 0;left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: var(--Secondary);
+}

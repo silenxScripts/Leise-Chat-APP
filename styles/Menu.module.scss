@@ -1,0 +1,139 @@
+@media only screen and (max-width:999px) {
+    .MainMenu{
+        position: fixed;
+        bottom: 0;left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(36, 36, 36);
+        z-index: 100;
+        color: white;
+        font-family: var(--Font-Ubuntu);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        overflow-y: scroll;
+        font-size: 10px;
+
+        &::-webkit-scrollbar{
+            width: 8px;
+        }
+    
+        .Options{
+            height: fit-content;width: fit-content;
+            padding: 20px;
+            min-width: 200px;
+            margin: 1rem;
+            height: 10px;
+            border-radius: 10px;
+            background-color: rgb(22, 22, 22);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: pointer;
+            animation: ani 2s infinite linear;
+            transition: 0.3s;
+            position: relative;
+    
+            &:hover{
+                filter: brightness(1.2);
+            }
+        }
+    
+        @keyframes ani {
+            0%{
+                top: 0px;
+            }
+            50%{
+                top: 3px;    
+            }
+            100%{
+                top: 0px;
+            }
+        }
+    }
+    
+    .MenuButton{
+        padding: 2px;
+        z-index: 101;
+        position: absolute;
+        color: white;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        bottom: 60px;
+        left: 5px;
+        filter: opacity(0.5);
+    }        
+}
+@media only screen and (min-width:999px) {
+    .MainMenu{
+        position: fixed;
+        border: 1px solid var(--Font-Color);
+        bottom: 100px;left: 0;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 10px;
+        background-color: rgb(36, 36, 36);
+        z-index: 100;
+        color: white;
+        font-family: var(--Font-Ubuntu);
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    
+        .Options{
+            height: fit-content;width: fit-content;
+            padding: 20px;
+            min-width: 200px;
+            margin: 10px;
+            min-height: 60px;
+            border-radius: 10px;
+            background-color: rgb(22, 22, 22);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+            animation: ani 2s infinite linear;
+            transition: 0.3s;
+            position: relative;
+            transform: scale(0.5);
+    
+            &:hover{
+                filter: brightness(1.2);
+            }
+        }
+    
+        @keyframes ani {
+            0%{
+                top: 0px;
+            }
+            50%{
+                top: 3px;    
+            }
+            100%{
+                top: 0px;
+            }
+        }
+    }
+    
+    .MenuButton{
+        padding: 2px;
+        z-index: 101;
+        position: absolute;
+        color: white;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        bottom: 60px;
+        left: 5px;
+        filter: opacity(0.5);
+    }        
+}
