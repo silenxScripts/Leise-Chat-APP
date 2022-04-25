@@ -25,7 +25,7 @@ const Profile = () => {
 
     return (
         <div className={s.container}>
-            <ul class={s.background}>
+            <ul className={s.background}>
                 <li></li>
                 <li></li>
                 <li></li>
